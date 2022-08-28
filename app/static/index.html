@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Dashboard - Line of Flat</title>
-	</head>
-	<body>
-		<h1>Line of Flat dashboard</h1>
+		<link rel="stylesheet" href="index.css" />
 
-		<a href="https://lineofflat.duckdns.org:9443/">Portainer</a>
-		<a href="http://lineofflat.duckdns.org:8280/">Tiny Tiny RSS</a>
-		<a href="http://lineofflat.duckdns.org:32080">WebDAV file server</a>
+		<title>Line of Flat dashboard</title>
+
+		<meta content="Line of Flat dashboard" property="og:title" />
+		<meta content="Line of Flat dashboard" property="twitter:title" />
+		<meta
+			content="Steve's homeserver, hosted on a Macbook Air 2012 using Docker."
+			property="og:description"
+		/>
+		<meta
+			content="Steve's homeserver, hosted on a Macbook Air 2012 using Docker."
+			property="twitter:description"
+		/>
+		<meta content="https://lineofflat.duckdns.org" property="og:url" />
+		<meta content="/media/lineofflat_banner.png" property="og:image" />
+		<meta content="/media/lineofflat_banner.png" property="twitter:image" />
+		<meta content="summary_large_image" property="twitter:card" />
+		<meta content="#00FFFF" data-react-helmet="true" name="theme-color" />
+	</head>
+
+	<body>
+		<h1 class="dashboard-header">Line of Flat dashboard</h1>
+		<h4 class="dashboard-subheader">
+			Steve's homeserver, hosted on a Macbook Air 2012 using Docker.
+		</h4>
+
+		<div class="dashboard-links">
+			<a
+				href="https://lineofflat.duckdns.org:9443/"
+				class="dashboard-link"
+				>Portainer</a
+			>
+			<a href="http://lineofflat.duckdns.org:8280/" class="dashboard-link"
+				>Tiny Tiny RSS</a
+			>
+			<a href="http://lineofflat.duckdns.org:32080" class="dashboard-link"
+				>WebDAV file server</a
+			>
+		</div>
+
+		<footer>
+			<h4>
+				Made by Steveplays -
+				<a
+					href="https://github.com/steveplays28/lineofflat-dashboard"
+					target="_blank"
+				>
+					GitHub</a
+				>
+			</h4>
+		</footer>
 	</body>
 </html>

@@ -1,0 +1,121 @@
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	background: linear-gradient(to bottom right, purple, cyan);
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: white;
+}
+
+.dashboard-header {
+	margin-bottom: 0;
+
+	text-align: center;
+	font-size: 7.5em;
+
+	transition: font-size 0.5s;
+}
+
+.dashboard-subheader {
+	margin-top: 0;
+
+	text-align: center;
+	font-size: 2em;
+
+	transition: font-size 0.5s;
+}
+
+.dashboard-links {
+	margin: 5% 25% 0 25%;
+	display: grid;
+	columns: 1;
+}
+
+.dashboard-link {
+	padding: 5%;
+	margin-bottom: 2%;
+	border: 2px solid blue;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+
+	text-align: center;
+	text-decoration: none;
+	color: blue;
+	font-size: 2em;
+
+	user-select: none;
+
+	transition: background-color 0.25s, color 0.25s, font-size 0.5s;
+}
+.dashboard-link:hover {
+	border-color: purple;
+	color: purple;
+
+	transition: border-color 0.25s, color 0.25s;
+}
+
+/* HD+ screens */
+@media (max-width: 1600px) {
+	.dashboard-header {
+		font-size: 6em;
+
+		transition: font-size 0.5s;
+	}
+
+	.dashboard-subheader {
+		font-size: 1.5em;
+
+		transition: font-size 0.5s;
+	}
+
+	.dashboard-link {
+		padding-right: 0;
+		padding-left: 0;
+		font-size: 1.5em;
+
+		transition: font-size 0.5s;
+	}
+}
+
+/* Macbook Air sized screens */
+@media (max-width: 1366px) {
+	.dashboard-header {
+		font-size: 4em;
+
+		transition: font-size 0.5s;
+	}
+
+	.dashboard-subheader {
+		font-size: 1em;
+
+		transition: font-size 0.5s;
+	}
+
+	.dashboard-link {
+		padding-right: 0;
+		padding-left: 0;
+		font-size: 1em;
+
+		transition: font-size 0.5s;
+	}
+}

@@ -15,6 +15,8 @@ footer {
 
 	text-align: center;
 	vertical-align: middle;
+
+	user-select: none;
 }
 
 .footer-links {
@@ -41,6 +43,8 @@ h6 {
 	text-align: center;
 	font-size: 7.5em;
 
+	user-select: none;
+
 	transition: font-size 0.5s;
 }
 
@@ -49,6 +53,8 @@ h6 {
 
 	text-align: center;
 	font-size: 2em;
+
+	user-select: none;
 
 	transition: font-size 0.5s;
 }
@@ -71,8 +77,6 @@ h6 {
 	color: blue;
 	font-size: 2em;
 
-	user-select: none;
-
 	transition: background-color 0.25s, color 0.25s, font-size 0.5s,
 		padding 0.5s;
 }
@@ -81,6 +85,10 @@ h6 {
 	color: purple;
 
 	transition: border-color 0.25s, color 0.25s;
+}
+
+.secret-tooltip:hover {
+	cursor: help;
 }
 
 /* Vertical resizing */

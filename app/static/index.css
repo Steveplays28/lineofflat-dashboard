@@ -9,13 +9,21 @@ body {
 
 footer {
 	position: fixed;
-	left: 0;
-	bottom: 0;
+	bottom: 2.5%;
 	width: 100%;
 	height: 5%;
 
 	text-align: center;
 	vertical-align: middle;
+}
+
+.footer-links {
+	text-decoration: none;
+	color: blue;
+}
+.footer-links:hover {
+	text-decoration: underline;
+	color: purple;
 }
 
 h1,
@@ -65,7 +73,8 @@ h6 {
 
 	user-select: none;
 
-	transition: background-color 0.25s, color 0.25s, font-size 0.5s;
+	transition: background-color 0.25s, color 0.25s, font-size 0.5s,
+		padding 0.5s;
 }
 .dashboard-link:hover {
 	border-color: purple;
@@ -74,8 +83,56 @@ h6 {
 	transition: border-color 0.25s, color 0.25s;
 }
 
+/* Vertical resizing */
+@media (max-height: 900px) {
+	.dashboard-link {
+		padding: 2.5%;
+
+		transition: font-size 0.5s, padding 0.5s;
+	}
+}
+
+@media (max-height: 800px) {
+	.dashboard-link {
+		padding: 1.5%;
+
+		transition: font-size 0.5s, padding 0.5s;
+	}
+}
+
+@media (max-height: 700px) {
+	.dashboard-link {
+		padding: 0.5%;
+
+		transition: font-size 0.5s, padding 0.5s;
+	}
+}
+
+/* 1800px screens */
+@media (max-width: 1800px) or (max-height: 900px) {
+	.dashboard-header {
+		font-size: 6.5em;
+
+		transition: font-size 0.5s;
+	}
+
+	.dashboard-subheader {
+		font-size: 1.75em;
+
+		transition: font-size 0.5s;
+	}
+
+	.dashboard-link {
+		padding-right: 0;
+		padding-left: 0;
+		font-size: 1.75em;
+
+		transition: font-size 0.5s, padding 0.5s;
+	}
+}
+
 /* HD+ screens */
-@media (max-width: 1600px) {
+@media (max-width: 1600px) or (max-height: 800px) {
 	.dashboard-header {
 		font-size: 6em;
 
@@ -93,12 +150,12 @@ h6 {
 		padding-left: 0;
 		font-size: 1.5em;
 
-		transition: font-size 0.5s;
+		transition: font-size 0.5s, padding 0.5s;
 	}
 }
 
 /* Macbook Air sized screens */
-@media (max-width: 1366px) {
+@media (max-width: 1366px) or (max-height: 720px) {
 	.dashboard-header {
 		font-size: 4em;
 
@@ -116,6 +173,6 @@ h6 {
 		padding-left: 0;
 		font-size: 1em;
 
-		transition: font-size 0.5s;
+		transition: font-size 0.5s, padding 0.5s;
 	}
 }

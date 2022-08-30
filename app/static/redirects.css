@@ -1,3 +1,19 @@
 .redirect-text {
 	text-align: center;
 }
+
+.redirect-link {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+
+	text-decoration: none;
+	color: #0D8CFF;
+
+	transition: color 0.25s;
+}
+.redirect-link:hover {
+	color: purple;
+
+	transition: color 0.25s;
+}

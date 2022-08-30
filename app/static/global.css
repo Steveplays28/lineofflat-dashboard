@@ -21,7 +21,7 @@ footer {
 
 .footer-links {
 	text-decoration: none;
-	color: blue;
+	color: #0D8CFF;
 
 	transition: color 0.25s;
 }
